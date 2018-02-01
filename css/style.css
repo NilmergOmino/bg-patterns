@@ -140,7 +140,7 @@ template {
 .main {
   position: relative;
   min-height: 90vh;
-  background-color: white; }
+  background-color: #403c3b; }
 
 .test-pattern {
   width: 100%;
@@ -154,7 +154,7 @@ template {
   border-radius: 2px;
   border: 2px solid #403c3b;
   background-color: #bfb3b2;
-  box-shadow: 0px 0px 30px #bfb3b2;
+  box-shadow: 0px 0px 30px #403c3b;
   position: absolute;
   top: calc(45vh - 150px);
   left: calc(50vw - 250px);

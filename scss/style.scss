@@ -22,7 +22,7 @@ $color-m5: rgb(225,238,237);
 .main{
     position: relative;
     min-height: 90vh;
-    background-color: white;
+    background-color: $color-m1;
 }
 .test-pattern{
     width: 100%;
@@ -36,7 +36,7 @@ $color-m5: rgb(225,238,237);
     border-radius: 2px;
     border: 2px solid $color-m1;
     background-color: $color-m3;
-    box-shadow: 0px 0px 30px $color-m3;
+    box-shadow: 0px 0px 30px $color-m1;
     position: absolute;
     top: calc(45vh - 150px);
     left: calc(50vw - 250px);
