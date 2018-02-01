@@ -5,17 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Create a pattern</title>
-    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">Create a background pattern for your website</header>
+    <header class="header">
+        <h1 class="header__heading">Create a background pattern for your website</h1>
+    </header>
     <main class="main">
+        <div class="test-pattern" id="test-pattern"></div>
         <div class="tool-container">
-            <canvas class="canvas" id="canvas" width="100" height="100">
+            <h2 class="tool-container__heading">set color and size of pattern</h2>
+            <div class="tiles-container">
+                <p>tiles</p>
+                <select name="tiles" id="tiles">
+                    <option value="2">2x2</option>
+                </select>
+            </div>
+            <div class="changes-container">
+                <div class="change-size-container">
+                    <p>size (px)</p>
+                    <select name="size" id="size">
 
-            </canvas>
+                    </select>
+                </div>
+                <div class="svg-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" id="svg-pattern">
+                        <rect class="svg-fragment" x="0" y="0" fill="rgb(229,215,213)"  width="50%" height="50%" />
+                        <rect class="svg-fragment" x="0" y="50%" fill="rgb(127,119,118)"  width="50%" height="50%" />
+                        <rect class="svg-fragment" x="50%" y="50%" fill="rgb(229,215,213)"  width="50%" height="50%" />
+                        <rect class="svg-fragment" x="50%" y="0" fill="rgb(127,119,118)"  width="50%" height="50%" />
+                    </svg>
+                </div>
+                <div class="change-color-container">
+                    <p>color</p>
+                    <input type="color" id="color">
+                </div>
+            </div>
+            <div class="save-container">
+                <button class="save" id="save">save</button>
+            </div>
         </div>
     </main>
-    <script src="scripts"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

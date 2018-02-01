@@ -1,1 +1,71 @@
 @import 'normalize';
+
+$color-m1: rgb(64,60,59);
+$color-m2: rgb(127,119,118);
+$color-m3: rgb(191,179,178);
+$color-m4: rgb(229,215,213);
+$color-m5: rgb(225,238,237);
+
+.header{
+    min-height: 10vh;
+    background-color: $color-m1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__heading{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        color: $color-m4;
+    }
+}
+.main{
+    position: relative;
+    min-height: 90vh;
+    background-color: white;
+}
+.test-pattern{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.tool-container{
+    width: 500px;
+    min-height: 300px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 2px solid $color-m1;
+    background-color: $color-m3;
+    box-shadow: 0px 0px 30px $color-m3;
+    position: absolute;
+    top: calc(45vh - 150px);
+    left: calc(50vw - 250px);
+    color: $color-m1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px 15px;
+    &__heading{
+        font-size: 16px;
+        text-align: center;
+    }
+}
+.changes-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.svg-container{
+
+}
+.change-color-container, .change-size-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.save-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
