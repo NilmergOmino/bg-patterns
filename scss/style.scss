@@ -31,6 +31,7 @@ $color-m5: rgb(225,238,237);
 }
 .tool-container{
     width: 500px;
+    max-width: 85%;
     min-height: 300px;
     box-sizing: border-box;
     border-radius: 2px;
@@ -42,8 +43,11 @@ $color-m5: rgb(225,238,237);
     left: calc(50vw - 250px);
     color: $color-m1;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 5px 15px;
     &__heading{
         font-size: 16px;
@@ -58,7 +62,7 @@ $color-m5: rgb(225,238,237);
 .svg-container{
 
 }
-.change-color-container, .change-size-container{
+.change-color-container, .change-size-container, .tiles-container{
     display: flex;
     justify-content: center;
     align-items: center;

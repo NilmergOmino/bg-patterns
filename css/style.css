@@ -149,6 +149,7 @@ template {
 
 .tool-container {
   width: 500px;
+  max-width: 85%;
   min-height: 300px;
   box-sizing: border-box;
   border-radius: 2px;
@@ -160,8 +161,11 @@ template {
   left: calc(50vw - 250px);
   color: #403c3b;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 5px 15px; }
   .tool-container__heading {
     font-size: 16px;
@@ -172,7 +176,7 @@ template {
   align-items: center;
   justify-content: space-between; }
 
-.change-color-container, .change-size-container {
+.change-color-container, .change-size-container, .tiles-container {
   display: flex;
   justify-content: center;
   align-items: center;
