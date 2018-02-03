@@ -30,24 +30,22 @@ $color-m5: rgb(225,238,237);
     position: absolute;
 }
 .tool-container{
-    width: 500px;
-    max-width: 85%;
+    width: 400px;
     min-height: 300px;
     box-sizing: border-box;
     border-radius: 2px;
     border: 2px solid $color-m1;
-    background-color: $color-m3;
+    background-color: $color-m4;
     box-shadow: 0px 0px 30px $color-m1;
     position: absolute;
     top: calc(45vh - 150px);
-    left: calc(50vw - 250px);
+    left: calc(50vw - 200px);
     color: $color-m1;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     align-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding: 5px 15px;
     &__heading{
         font-size: 16px;
@@ -57,19 +55,49 @@ $color-m5: rgb(225,238,237);
 .changes-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .svg-container{
-
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 .change-color-container, .change-size-container, .tiles-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
+}
+.changes_left, .change-color-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+}
+.changes-paragraph{
+    margin: 0;
+    padding: 0;
+}
+.color-container{
+    width: 100%;
 }
 .save-container{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.input-changes{
+    box-sizing: border-box;
+    border: 1px solid $color-m1;
+    background-color: transparent;
+    padding: 2px;
+    width: 100%;
+}
+.input_select{
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }

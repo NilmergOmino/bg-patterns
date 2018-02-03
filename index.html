@@ -17,10 +17,10 @@
             <h2 class="tool-container__heading">set color and size of pattern</h2>
 
             <div class="changes-container">
-                <div>
+                <div class="changes_left">
                     <div class="tiles-container">
-                        <p>tiles</p>
-                        <select name="tiles" id="tiles">
+                        <p class="changes-paragraph">tiles</p>
+                        <select class="input-changes input_select" name="tiles" id="tiles">
                             <option value="2" selected>2x2</option>
                             <option value="3">3x3</option>
                             <option value="4">4x4</option>
@@ -38,21 +38,23 @@
                         </select>
                     </div>
                     <div class="change-size-container">
-                        <p>size (px)</p>
-                        <select name="size" id="size"></select>
+                        <p class="changes-paragraph">size (px)</p>
+                        <select class="input-changes input_select" name="size" id="size"></select>
                     </div>
                 </div>
                 <div class="svg-container">
                     <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" id="svg-pattern"></svg>
                 </div>
                 <div class="change-color-container">
-                    <p>color</p>
-                    <input type="color" id="color">
-                    <button id="color-all" class="color-all">color all tiles</button>
+                    <div class="color-container">
+                        <p class="changes-paragraph">color</p>
+                        <input class="input-changes input_color" type="color" id="color">
+                    </div>
+                    <button class="input-changes input_color-all" id="color-all">color all</button>
                 </div>
             </div>
             <div class="save-container">
-                <button class="save" id="save">save</button>
+                <button class="input-changes input_save" class="save" id="save">save</button>
             </div>
         </div>
     </main>
